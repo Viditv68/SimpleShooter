@@ -43,4 +43,8 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float MaxRange = 1000.f;
+
+	bool GunTrace(FHitResult& Hit, FVector& ShotDirection);
+
+	AController* GetOwnerController() const;
 };
